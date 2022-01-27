@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="grid.css">
+    <title>Document</title>
+</head>
+<body>    
+    <div class="conteiner">
+        <header></header>
+        <main>        
+        Grids
+        Características da grid:
+        Bidimensional
+        Divisão de todas as páginas em linhas e colunas
+        Podemos colocar elementos onde quisermos nessa divisão
+        
+        Propriedades:
+        Podemos dividir as propriedades em container e itens.
+        
+        Container:
+        
+        display: grid;
+        Inicia como grid (grade).
+        
+        grid-template-colums;
+                    Define quantas colunas nossa grade tem.
+        
+        grid-template-rows;
+                    Define a quantidade de linhas da grade.
+        
+        grid-gap/gap;
+                    Define o espaçamento entre as linhas e colunas.
+        
+         grid-template-areas;
+                    Delimita a área da grid.
+             
+        
+          Existem mais três propriedades de alinhamento para conteúdos.
+        
+         justify-content: ;
+        Usamos essa propriedade quando o tamanho do grid é menor que a área definida e o posicionamento será na horizontal trabalhando com colunas. Para essa propriedade temos 7 valores:
+        start = Quando queremos “justificar” à esquerda..
+        end = Quando queremos “justificar” no fim.
+        center = Quando queremos “justificar” ao centro.
+        stretch = Quando queremos alongar o conteúdo.
+        space-between = Para colocar um espaço entre cada coluna do conteúdo.
+        space-around = Para colocar espaço ao redor das colunas do conteúdo
+        space-evenly = Para colocar o mesmo tanto de espaço entre as colunas (é o mesmo que o between e o around juntos).
+        
+         align-content: ; 
+        Usamos essa propriedade para trabalhar com as linhas da grid.
+              Seus valores são:
+        start = Quando queremos “justificar” no topo.
+        end = Quando queremos “justificar” no rodapé..
+        center = Quando queremos “justificar” ao centro.
+        stretch = Quando queremos alongar o conteúdo.
+        space-between = Para colocar um espaço entre cada linha do conteúdo.
+        space-around = Para colocar espaço ao redor das linha do conteúdo
+        space-evenly = Para colocar o mesmo tanto de espaço entre as linhas (é o mesmo que o between e o around juntos).
+        Itens:
+        São vistos como células na  grid. 
+         grid-colums;
+                    Onde definimos o início da coluna (grid-colums-start) e o fim (grid-colums-end).
+        
+         grid-row;
+                    Onde definimos o início da linha (grid-row-start) e o fim (grid-row-end).
+        
+         grid-area;
+                  Onde definimos a área do item da grid.
+        
+        
+          Existem mais três propriedades de alinhamento para itens.
+        
+         justify-items: ;
+        Quando precisamos ajustar o item dentro da célula trabalhando em colunas, na horizontal. Ele recebe quatro valores.
+        start para justificar a esquerda da célula.
+        end para justificar a direita.
+        center, justifica ao centro.
+        stratch, justifica alongando o conteúdo para caber na célula.
+        
+            align-items: ;
+        Para trabalhar os itens como linhas, na vertical. 
+        start para justificar ao topo da célula.
+        end para justificar ao rodapé.
+        center, justifica ao centro.
+        stratch, justifica alongando o conteúdo para caber na célula.
+        
+            justify-self: ;
+        É usada para aplicarmos configurações em uma célula específica trabalhando de forma horizontal, as colunas.
+            align-self: ;
+        Para trabalharmos configurações em linhas na vertical.
+        
+        Ambas recebem os mesmos valores que as outras propriedades.
+               
+                Trabalhando com as propriedades
+                A primeira coisa que fazemos é criar no documento HTML as tags desejadas dentro de uma “div” com a “class” desejada. Nesse caso criei as tags "header" "main" "aside" e "footer" com a “class=”conteiner"”.
+        
+                Agora vamos trabalhar as propriedades no documento da CSS. Chamamos a classe e a configuramos como "display: grid;" para definir que essa classe aparecerá como grade.
+        
+                grid-template-colums;
+             Definimos quantas colunas queremos dividir. Nesse caso vou dividir em duas colunas, para isso podemos usar o valor "1fr;" (uma fração), a quantidade de "1frs" que usamos define o número de colunas, se eu quisesse usar 3 colunas colocaria mais um valor, como: "1fr 1fr 1fr"
+              Também podemos usar o valor "repeat(2, 1fr)" para determinar que a grade terá 2 colunas com 1fr.
+        
+            Se queremos usar mais do que uma fração podemos declarar "2fr" ou "3fr".
+        
+        grid-tamplate-rows;
+        Da mesma maneira podemos definir as linhas da grade usando os valores de tamanhos (vh, vw, %, px etc.). Nesse caso vou definir meu exemplo como: “grid-tamplate-rows: 20vh 70vh 10vh).
+        
+        Saiba mais sobre <a href="https://css-tricks.com/snippets/css/complete-guide-grid/">grids aqui </a>
+
+        <a href="https://www.origamid.com/projetos/css-grid-layout-guia-completo/">Guia de CSS Grid Layout</a>
+
+        <a href="https://origamid.com/projetos/flexbox-guia-completo/">Guia de Flexbox</a>
+    </main>
+        <aside>
+
+        </aside>
+
+        <footer>
+
+        </footer>
+    </div>
+</body>
+</html>
