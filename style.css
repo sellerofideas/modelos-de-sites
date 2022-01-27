@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+header{
+    display: block;
+    text-align: center;
+    background: blue;
+    height: 100px;
+    padding-top: 50px;
+    font-size: 2em;
+    color: white;
+}
+
+.block{
+    display: flex;
+}
+
+.block a{
+    display: block;
+    padding: 15px;
+    margin: 15px;
+    width: 300px;  
+    border: 5px solid black;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.5em;
+}
