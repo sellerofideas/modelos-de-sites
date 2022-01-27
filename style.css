@@ -22,7 +22,8 @@ header{
 }
 
 .block a{
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
     padding: 15px;
     margin: 15px;
     width: 300px;  
