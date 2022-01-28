@@ -5,13 +5,8 @@
 *{    
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /*se der algum erro é pq aqui está para geral e não somente para alguns elementos, refaça essa parte.*/
+    box-sizing: border-box;
 }
-/*
-body, h1 h2 p {    
-    margin: 0;
-    padding: 0;
-}*/
 
 body{
     font-family: "Nunito", Arial, Helvetica, sans-serif;
